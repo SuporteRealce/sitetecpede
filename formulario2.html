@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="iso-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulário</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mask.js"></script>
+</head>
+<body>
+
+
+	<div class="formulario">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="formulario-conteudo">
+						<div class="row">
+							<div class="col-md-12">
+								<h1>Formulario</h1>
+							</div>
+							<div class="col-md-6">
+								<label for="">Nome <span>*</span></label>
+								<input type="text" placeholder="escreva seu nome..." class="validador_input_nome">
+							</div>
+							<div class="col-md-6">
+								<label for="">CPF/ CNPJ <span>*</span></label>
+								<input type="text" placeholder="cpf ou cnpj" class="validador_input_cpf mascaraDocumento">
+							</div>
+							<div class="col-md-6">
+								<label for="">E-mail <span>*</span></label>
+								<input type="text" placeholder="escreva seu email..." class="validador_input_email">
+							</div>
+							<div class="col-md-6">
+								<label for="">Telefone <span>*</span></label>
+								<input type="text" placeholder="escreva seu telefone/whatsapp..." class="validador_input_telefone sp_celphones">
+							</div>
+
+							<!-- <div class="col-md-12">
+								<div class="mentoria">
+									<p>Tipo de Mentoria: <span>*</span></p>
+									<div class="cntr">
+				                        <input type="radio" name="radio-cbx" id="cbx" class="cbx-click" class="hidden-xs-up" style="opacity: 0">
+				                        <label for="cbx" class="cbx"></label>
+				                        <label for="cbx" class="lbl">Avulsa/ Aula Particular</label>
+				                    </div>
+				                    <div class="cntr">
+				                        <input type="radio" name="radio-cbx" id="cbx1" class="cbx-click" class="hidden-xs-up" style="opacity: 0">
+				                        <label for="cbx1" class="cbx"></label>
+				                        <label for="cbx1" class="lbl">Mensal</label>
+				                    </div>
+				                    <div class="cntr">
+				                        <input type="radio" name="radio-cbx" id="cbx2" class="cbx-click" class="hidden-xs-up" style="opacity: 0">
+				                        <label for="cbx2" class="cbx"></label>
+				                        <label for="cbx2" class="lbl">Pacote/ Projeto</label>
+				                    </div>
+				                </div>
+							</div>
+							<div class="col-md-12">
+								<div class="tema">
+									<p>Tema: <span>*</span></p>
+									<div class="cntr">
+				                        <input type="checkbox" id="cbx3" class="cbx-click" class="hidden-xs-up" style="opacity: 0">
+				                        <label for="cbx3" class="cbx"></label>
+				                        <label for="cbx3" class="lbl">Pregão Eletrônico</label>
+				                    </div>
+				                    <div class="cntr">
+				                        <input type="checkbox" id="cbx4" class="cbx-click" class="hidden-xs-up" style="opacity: 0">
+				                        <label for="cbx4" class="cbx"></label>
+				                        <label for="cbx4" class="lbl">Pregão Presencial</label>
+				                    </div>
+				                    <div class="cntr">
+				                        <input type="checkbox" id="cbx5" class="cbx-click" class="hidden-xs-up" style="opacity: 0">
+				                        <label for="cbx5" class="cbx"></label>
+				                        <label for="cbx5" class="lbl">Comprosil</label>
+				                    </div>
+				                    <div class="cntr">
+				                        <input type="checkbox" id="cbx6" class="cbx-click" class="hidden-xs-up" style="opacity: 0">
+				                        <label for="cbx6" class="cbx"></label>
+				                        <label for="cbx6" class="lbl">SIEMF</label>
+				                    </div>
+				                    <div class="cntr">
+				                        <input type="checkbox" id="cbx7" class="cbx-click" class="hidden-xs-up" style="opacity: 0">
+				                        <label for="cbx7" class="cbx"></label>
+				                        <label for="cbx7" class="lbl">Registro de Preço</label>
+				                    </div>
+				                    <div class="cntr">
+				                        <input type="checkbox" id="cbx8" class="cbx-click" class="hidden-xs-up" style="opacity: 0">
+				                        <label for="cbx8" class="cbx"></label>
+				                        <label for="cbx8" class="lbl">Cotação Eletrônico</label>
+				                    </div>
+				                    <div class="cntr">
+				                        <input type="checkbox" id="cbx9" class="cbx-click" class="hidden-xs-up" style="opacity: 0">
+				                        <label for="cbx9" class="cbx"></label>
+				                        <label for="cbx9" class="lbl">Lei 8.666/43</label>
+				                    </div>
+				                    <div class="cntr">
+				                        <input type="checkbox" id="cbx10" class="cbx-click" class="hidden-xs-up" style="opacity: 0">
+				                        <label for="cbx10" class="cbx"></label>
+				                        <label for="cbx10" class="lbl">Outro</label>
+				                    </div>
+				                </div>
+							</div> -->
+
+							<div class="col-md-6">
+								<div class="mentoria">
+									<label for="">Mentoria <span>*</span></label>
+									<select>
+										<option value="Avulsa/ Aula Particular">Avulsa/ Aula Particular</option>
+										<option value="Mensal">Mensal</option>
+										<option value="Pacote/ Projeto">Pacote/ Projeto</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="tema">
+									<label for="">Tema <span>*</span></label>
+									<select>
+										<option value="Pregão Eletrônico">Pregão Eletrônico</option>
+										<option value="Pregão Presencial">Pregão Presencial</option>
+										<option value="Comprosil">Comprosil</option>
+										<option value="SIEMF">SIEMF</option>
+										<option value="Registro de Preço">Registro de Preço</option>
+										<option value="Cotação Eletrônico">Cotação Eletrônico</option>
+										<option value="Lei 8.666/43">Lei 8.666/43</option>
+										<option value="Outro">Outro</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="outro">
+									<label for="">Especifique <span>*</span></label>
+									<input type="text" placeholder="especifique o que você precisa" class="validador_input_especifique">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<input type="submit" value="Enviar Dados" class="enviarMensagem">
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		.no-padding {
+			margin: 0px;
+			padding: 0px;
+		}
+		.formulario {
+			position: relative;
+			width: 70%;
+			border: 1px solid gray;
+			margin: 0px auto;
+			border-radius: 5px;
+			align-items: center;
+		}
+		.formulario-background {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			background-image: url('img-teste.png');
+			background-size: cover;
+			background-position: right;
+		}
+		.formulario-conteudo {
+			padding-top: 30px;
+			padding-bottom: 40px;
+		}
+		.formulario-conteudo h1 {
+			font-weight: 700;
+			font-size: 36px;
+			border-left: 7px solid #336699;
+			padding-left: 15px;
+		}
+		.formulario label {
+			margin-top: 20px;
+		}
+		.formulario label span {
+			color: red;
+		}
+		.formulario input, .formulario select {
+			display: block;
+			width: 100%;
+			height: 45px;
+			padding-left: 10px;
+			border: none;
+			border: 1px solid #c7c7c7;
+			border-radius: 2px;
+			outline: none;
+		}
+		.formulario input:focus {
+			border: 1px solid #336699;
+			transition: .3s;
+		}
+		.formulario input[type="submit"], .formulario button {
+			background-color: #336699;
+			color: white;
+			border: none;
+			outline: none;
+			font-size: 18px;
+			width: 180px;
+			height: 55px;
+			padding: 0px;
+			border-radius: 2px;
+			margin-top: 40px;
+		}
+		.formulario label {
+			font-weight: 600;
+		}
+		.error_input {
+		  	border: 1px solid red !important;
+		}
+		.outro {
+			display: none;
+		}
+		.outro-ativo {
+			display: block !important;
+		}
+
+
+
+		.formulario-conteudo p {
+			margin: 0px;
+			font-weight: 600;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			font-size: 17px;
+			color: #336699;
+		}
+		.formulario-conteudo p span {
+			color: red;
+		}
+		.cntr input {
+			height: 0px !important;
+		}
+		.cntr label {
+			margin: 0px !important;
+		}
+		.cbx {
+			position: relative;
+			top: 1px;
+			width: 17px;
+			height: 17px;
+			border: 1px solid #336699;
+			border-radius: 100%;
+			vertical-align: middle;
+			transition: background .1s ease;
+			cursor: pointer;
+		}
+		.cbx:after {
+			content: '';
+			position: absolute;
+			top: 1px;
+			left: 5px;
+			width: 5px;
+			height: 11px;
+			opacity: 0;
+			transform: rotate(45deg) scale(0);
+			border-right: 2px solid white;
+			border-bottom: 2px solid white;
+			transition: all .3s ease;
+			transition-delay: .15s;
+		}
+		.lbl {
+			margin-left: 5px;
+			vertical-align: middle;
+			cursor: pointer;
+		}
+		.cbx-click:checked ~ .cbx {
+			border-color: #336699;
+			background-color: #336699;
+			animation: jelly .6s ease;
+		}
+		.cbx-click:checked ~ .cbx:after {
+			opacity: 1;
+			transform: rotate(45deg) scale(1);
+		}
+
+		.click-icon:focus {
+			animation: jelly .6s;
+		}
+
+		@keyframes jelly {
+			from {
+				transform: scale(1, 1);
+			}
+			30% {
+				transform: scale(1.25, 0.75);
+			}
+			40% {
+		    	transform: scale(0.75, 1.25);
+			}
+		  	50% {
+		    	transform: scale(1.15, 0.85);
+		  	}
+		  	65% {
+		   	 	transform: scale(.95, 1.05);
+		  	}
+		  	75% {
+		    	transform: scale(1.05, .95);
+		  	}
+		  	to {
+		    	transform: scale(1, 1);
+		  	}
+		}
+	</style>
+
+	<script>
+		function validacao() {
+			var res = "";
+
+			if($('.validador_input_nome').val()=="" || $('.validador_input_nome').val().length < 4){
+				$('.validador_input_nome').addClass('error_input');
+				res += "por favor, preencha o campo nome \r\n"; 
+			} else {
+				$('.validador_input_nome').removeClass('error_input');
+			}
+
+			if($('.validador_input_email').val()=="" || $('.validador_input_email').val().indexOf('@')==-1 || $('.validador_input_email').val().indexOf('.')==-1 ){
+				$('.validador_input_email').addClass('error_input');
+				res += "por favor, preencha o campo e-mail \r\n"; 
+			} else {
+				$('.validador_input_email').removeClass('error_input');
+			}
+
+			if($('.validador_input_cpf').val()=="" || $('.validador_input_cpf').val().length < 14 || ($('.validador_input_cpf').val().length > 14 && $('.validador_input_cpf').val().length < 18)){
+				$('.validador_input_cpf').addClass('error_input');
+				res += "por favor, preencha o campo cpf ou cnpj \r\n"; 
+			} else {
+				$('.validador_input_cpf').removeClass('error_input');
+			}
+
+			if($('.validador_input_telefone').val()=="" || $('.validador_input_telefone').val().length < 10 ){
+				$('.validador_input_telefone').addClass('error_input');
+				res += "por favor, preencha o campo de telefone \r\n"; 
+			} else {
+				$('.validador_input_telefone').removeClass('error_input');
+			}
+
+			// if($('.mentoria input').is(':checked') == false){
+			// 	$('.mentoria .cbx').addClass('error_input');
+			// 	res += "por favor, preencha o campo de checkbox mentoria \r\n"; 
+			// } else {
+			// 	$('.mentoria .cbx').removeClass('error_input');
+			// }
+
+			// if($('.tema input').is(':checked') == false ){
+			// 	$('.tema .cbx').addClass('error_input');
+			// 	res += "por favor, preencha o campo de checkbox tema \r\n"; 
+			// } else {
+			// 	$('.tema .cbx').removeClass('error_input');
+			// }
+
+			// if($('.tema input').last().is(':checked') == true && $('.outro input').val()=="" && $('.outro input').val().length < 4 ){
+			// 	$('.outro input').addClass('error_input');
+			// 	res += "por favor, preencha o campo de outro \r\n"; 
+			// } else {
+			// 	$('.outro input').removeClass('error_input');
+			// }
+
+
+
+			return res;
+		}
+
+		// function outro() {
+		// 	if($('.tema input').last().is(':checked') == true) {
+		// 		$('.outro').addClass('outro-ativo');
+		// 	}
+		// }
+
+		$('.tema select').on('change',function(){
+			if($(this).val()=="Outro"){
+				$('.outro').addClass('outro-ativo');
+			}
+		});
+
+		// $('.tema input').last().click(function(){
+		// 	outro();
+		// 	if($('.tema input').is(':checked') == false ){
+		// 		$('.tema .cbx').addClass('error_input');
+		// 		res += "por favor, preencha o campo de checkbox tema \r\n"; 
+		// 	} else {
+		// 		$('.tema .cbx').removeClass('error_input');
+		// 	}
+		// })
+		
+
+		$('.enviarMensagem').click(function(){
+			var validar = validacao();
+			if (validar=="") {
+				alert('Enviado!!!');
+	        } else {
+	            alert(validar);       
+	        }
+		});
+
+		var DocumentoMaskBehavior = function (val) {
+            return val.replace(/\D/g, '').length === 14 ? '00.000.000/0000-00' : '000.000.000-00999';
+        },
+        documentoOptions = {
+            onKeyPress: function (val, e, field, options) {
+                field.mask(DocumentoMaskBehavior.apply({}, arguments), options);
+           	}
+       };
+
+        $('.mascaraDocumento').mask(DocumentoMaskBehavior, documentoOptions);
+
+		var SPMaskBehavior = function (val) {
+		  return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+		},
+		spOptions = {
+		  onKeyPress: function(val, e, field, options) {
+		      field.mask(SPMaskBehavior.apply({}, arguments), options);
+		    }
+		};
+
+		$('.sp_celphones').mask(SPMaskBehavior, spOptions);
+    </script>
+	
+</body>
+</html>

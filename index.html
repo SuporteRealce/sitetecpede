@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<!-- links -->
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/meu.js"></script>
+
+	<script>
+	$(document).ready(function($){
+		$(".scroll").click(function(event){
+			event.preventDefault();
+		    $('html, body').animate({scrollTop:$(this.hash).offset().top - 90}, 1000);
+	   	});
+	});
+	</script>
+</head>
+<body>
+	<div id="inicio" style="display: none;"></div>
+
+	<!-- header -->
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="conteudo-header">
+						<a href="index.html">
+							<img src="img/logo.png" alt="Tecpede || Sistema de Pedidos">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="conteudo-header">
+						<ul>
+							<li><a href="#inicio" class="scroll">Página Inicial</a></li>
+							<li><a href="#recursos" class="scroll">Recursos</a></li>
+							<li><a href="#planos" class="scroll">Planos</a></li>
+							<li><a href="#contato" class="scroll">Fale Conosco</a></li>
+							<li><a href="#">Demonstração</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="conteudo-header">
+						<ul class="social">
+							<li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header-responsivo">
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<div class="conteudo-header-responsivo">
+						<a href="index.html">
+							<img src="img/logo.png" alt="Tecpede || Sistema de Pedidos">
+						</a>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="conteudo-header-responsivo">
+						<div class="btn-header-responsivo">
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<ul>
+						<li><a href="#inicio" class="scroll">Página Inicial</a></li>
+						<li><a href="#recursos" class="scroll">Recursos</a></li>
+						<li><a href="#planos" class="scroll">Planos</a></li>
+						<li><a href="#contato" class="scroll">Fale Conosco</a></li>
+						<li><a href="#">Demonstração</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- banner -->
+	<div class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="conteudo-banner">
+						<p>Sistema Completo</p>
+						<h1>Automatize os seus pedidos de <span>delivery</span>.</h1>
+						<div class="btn-banner">
+							<a href="#">Saiba Mais</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="bloco-img-banner">
+						<img src="img/img_mao_celular.png">
+					</div>
+					<div class="bloco-icone-banner"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- sobre -->
+	<div class="sobre">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="conteudo-sobre conteudo-sobre-img">
+						<img src="img/img_sobre.png" alt="">
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="conteudo-sobre">
+						<h1>Automatize o seu atendimento online</h1>
+						<hr>
+						<p>Você recebe os pedidos feitos e não tem a necessidade de cadastrar nada. Ele veem conforme eles acontencem, somente para a aprovação e entrega.</p>
+						<div class="row">
+							<div class="col-md-6 col-6">
+								<div class="bloco-sobre">
+									<div class="bloco-sobre-icone">
+										<img src="img/icon01.png">
+									</div>
+									<div class="bloco-sobre-texto">
+										<h1>Simplifique o seu processo</h1>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-6">
+								<div class="bloco-sobre">
+									<div class="bloco-sobre-icone">
+										<img src="img/icon025.png">
+									</div>
+									<div class="bloco-sobre-texto">
+										<h1>Simplifique o seu processo</h1>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-6">
+								<div class="bloco-sobre">
+									<div class="bloco-sobre-icone">
+										<img src="img/icon03.png">
+									</div>
+									<div class="bloco-sobre-texto">
+										<h1>Simplifique o seu processo</h1>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-6">
+								<div class="bloco-sobre">
+									<div class="bloco-sobre-icone">
+										<img src="img/icon04.png">
+									</div>
+									<div class="bloco-sobre-texto">
+										<h1>Simplifique o seu processo</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ferramenta -->
+	<div class="ferramenta" id="recursos">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="conteudo-ferramenta">
+						<p>ferramentas</p>
+						<h1>Temos várias funcionalidades para<br> auxiliar na sua gestão</h1>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="bloco-ferramenta">
+						<div class="bloco-ferramenta-icone">
+							<img src="img/icon01.png" alt="">
+						</div>
+						<div class="bloco-ferramenta-texto">
+							<h1>Amazing Colors</h1>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="bloco-ferramenta">
+						<div class="bloco-ferramenta-icone">
+							<img src="img/icon05.png" alt="">
+						</div>
+						<div class="bloco-ferramenta-texto">
+							<h1>Amazing Colors</h1>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="bloco-ferramenta">
+						<div class="bloco-ferramenta-icone">
+							<img src="img/icon06.png" alt="">
+						</div>
+						<div class="bloco-ferramenta-texto">
+							<h1>Amazing Colors</h1>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="bloco-ferramenta">
+						<div class="bloco-ferramenta-icone">
+							<img src="img/icon07.png" alt="">
+						</div>
+						<div class="bloco-ferramenta-texto">
+							<h1>Amazing Colors</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- plano -->
+	<div class="plano" id="planos">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="bloco-plano">
+						<p>nosso plano</p>
+						<h1>100<span>00</span></h1>
+						<ul>
+							<li>+50 pro widgets</li>
+							<li>300+ Pro Templates</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="conteudo-plano">
+						<h1>Automatize o seu atendimento online</h1>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit excepturi animi, in velit error ex, facere adipisci corporis, qui id praesentium nemo. Modi, repudiandae unde?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- contato -->
+	<div class="contato" id="contato">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="conteudo-contato">
+						<h1>Entre em Contato</h1>
+						<div class="row">
+							<div class="col-md-6">
+								<input type="text" placeholder="Nome">
+							</div>
+							<div class="col-md-6">
+								<input type="text" placeholder="Sobrenome">
+							</div>
+							<div class="col-md-6">
+								<input type="text" placeholder="Email">
+							</div>
+							<div class="col-md-6">
+								<input type="text" placeholder="Telefone">
+							</div>
+							<div class="col-md-12">
+								<input type="text" placeholder="Assunto">
+							</div>
+							<div class="col-md-12">
+								<textarea placeholder="Mensagem"></textarea>
+							</div>
+							<div class="col-md-12">
+								<input type="submit" value="Enviar">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- rede -->
+	<div class="rede">
+		<div class="container">
+			<div class="row justify-content-md-center justify-content-between">
+				<div class="col-md-3">
+					<div class="bloco-rede">
+						<div class="bloco-rede-icone">
+							<i class="fa fa-paper-plane"></i>
+						</div>
+						<div class="bloco-rede-texto">
+							<p><span>E-mail:</span><br>contato@nomeaqui.com.br</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="bloco-rede">
+						<div class="bloco-rede-icone">
+							<i class="fa fa-phone"></i>
+						</div>
+						<div class="bloco-rede-texto">
+							<p><span>Telefone:</span><br>(43) 99688-8652</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="bloco-rede">
+						<div class="bloco-rede-icone">
+							<i class="fa fa-whatsapp"></i>
+						</div>
+						<div class="bloco-rede-texto">
+							<p><span>Whatsapp:</span><br>(43) 99688-8652</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="bloco-rede">
+						<div class="bloco-rede-icone">
+							<i class="fa fa-map-marker"></i>
+						</div>
+						<div class="bloco-rede-texto">
+							<p><span>Endereço:</span><br>Rua Apenas um teste, 433 - centro - Apucarana/PR</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="conteudo-footer">
+						<img src="img/logo.png" alt="Tecpede || Sistema de Pedidos">
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="conteudo-footer">
+						<ul>
+							<li><a href="#inicio" class="scroll">Página Inicial</a></li>
+							<li><a href="#recursos" class="scroll">Recursos</a></li>
+							<li><a href="#planos" class="scroll">Planos</a></li>
+							<li><a href="#contato" class="scroll">Fale Conosco</a></li>
+							<li><a href="#">Demonstração</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>Todos os direitos estao reservados.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
