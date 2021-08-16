@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Avalie a sua entrega</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="avaliacao">
+
+                        <div class="bloco-avaliacao">
+                            <div class="bloco-pergunta">
+                                <p>1. Todos os itens solicitados foram entregues corretamente?</p>
+                            </div>
+                            <div class="bloco-nota">
+                                <div class="vote">
+                                    <label>
+                                        <input type="radio" name="fb" value="1" />
+                                        <i class="fa"></i>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="fb" value="2" />
+                                        <i class="fa"></i>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="fb" value="3" />
+                                        <i class="fa"></i>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="fb" value="4" />
+                                        <i class="fa"></i>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="fb" value="5" />
+                                        <i class="fa"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bloco-avaliacao">
+                            <div class="bloco-pergunta">
+                                <p>2. A entrega foi realizada dentro do prazo previsto?</p>
+                            </div>
+                            <div class="bloco-nota">
+                                <div class="vote">
+                                    <label>
+                                        <input type="radio" name="fb2" value="1" />
+                                        <i class="fa"></i>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="fb2" value="2" />
+                                        <i class="fa"></i>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="fb2" value="3" />
+                                        <i class="fa"></i>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="fb2" value="4" />
+                                        <i class="fa"></i>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="fb2" value="5" />
+                                        <i class="fa"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bloco-avaliacao">
+                            <div class="bloco-pergunta">
+                                <p>3. Como avalia a qualidade do(s) produto(s)?</p>
+                            </div>
+                            <div class="bloco-nota">
+                                <div class="bloco-nota">
+                                <div class="vote">
+                                    <label>
+                                        <input type="radio" name="fb3" value="1" />
+                                        <i class="fa"></i>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="fb3" value="2" />
+                                        <i class="fa"></i>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="fb3" value="3" />
+                                        <i class="fa"></i>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="fb3" value="4" />
+                                        <i class="fa"></i>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="fb3" value="5" />
+                                        <i class="fa"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="bloco-avaliacao">
+                            <div class="bloco-pergunta">
+                                <p>4. Informações complementares (opcional):</p>
+                            </div>
+                            <div class="bloco-nota">
+                                <textarea placeholder="Digite o seu texto aqui..."></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-nota">Enviar Feedback</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        * { margin: 0px; padding: 0px; }
+
+        .vote label {
+            cursor:pointer;
+        }
+        .vote label input{
+            display:none;
+        }
+        .vote label i {
+            font-family:FontAwesome;
+            font-size: 2.5em;
+            -webkit-transition-property:color, text;
+            -webkit-transition-duration: .2s, .2s;
+            -webkit-transition-timing-function: linear, ease-in;
+            -moz-transition-property:color, text;
+            -moz-transition-duration:.2s;
+            -moz-transition-timing-function: linear, ease-in;
+            -o-transition-property:color, text;
+            -o-transition-duration:.2s;
+            -o-transition-timing-function: linear, ease-in;
+            color: #ccc;
+        }
+        .vote label i:before {
+            content:'\f005';
+        }
+        .vote label i.active {
+            color:gold;
+        }
+
+        .bloco-avaliacao {
+            padding: 10px 0px;
+        }
+        .bloco-pergunta p {
+            font-weight: 500;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+        .bloco-nota textarea {
+            width: 100%;
+            height: 70px;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-top: 10px;
+            border: 1px solid #ccc;
+            -webkit-box-shadow: 0px 0px 28px -12px rgba(0,0,0,.15);
+            -moz-box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.15);
+            box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.15);
+            transition: .3s all;
+        }
+        .bloco-nota textarea:hover, .bloco-nota textarea:focus {
+            -webkit-box-shadow: 0px 0px 28px -12px rgba(0,0,0,.25);
+            -moz-box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.25);
+            box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.25);
+        }
+
+        .btn-nota {
+            width: 200px;
+            height: 50px;
+            background-color: #fee914;
+            color: #0e0e0e;
+            border: none;
+            font-weight: 500;
+            font-size: 18px;
+            transition: .3s;
+        }
+        .btn-nota:hover, .btn-nota:focus {
+            background-color: #0e0e0e;
+            color: #fee914;
+        }
+    </style>
+
+    <script>
+        $('.vote label i.fa').on('click mouseover',function(){
+            // remove classe ativa de todas as estrelas
+            $(this).parents(".vote").first().find(".fa").removeClass('active');
+            // pegar o valor do input da estrela clicada
+            var val = $(this).prev('input').val();
+            //percorrer todas as estrelas
+
+            $(this).parents(".vote").first().find('.fa').each(function(){
+                /* checar de o valor clicado é menor ou igual do input atual
+                *  se sim, adicionar classe active
+                */
+                var $input = $(this).prev('input');
+                if($input.val() <= val){
+                    $(this).addClass('active');
+                }
+            });
+            $("#voto").html(val); // somente para teste
+        });
+
+        //Aosair da div vote
+        $('.vote').on("mouseleave",function(){
+            //pegar o valor clicado
+            var val = $(this).find('input:checked').val();
+            //se nenhum foi clicado remover classe de todos
+            console.log($(this).find('input:checked').length);
+            if($(this).find('input:checked').length==0){
+                $(this).find('.fa').removeClass('active');
+            } else {
+                //percorrer todas as estrelas
+                $(this).find('.fa').each(function(){
+                    /* Testar o input atual do laço com o valor clicado
+                    *  se maior, remover classe, senão adicionar classe
+                    */
+
+                    var $input = $(this).prev('input');
+                    console.log("Input: "+$(this).prev('input').val());
+                    if($input.val() > val){
+                        $(this).removeClass('active');
+                    } else {
+                        $(this).addClass('active');
+                    }
+                });
+            }
+            $("#voto").html(val); // somente para teste
+        });
+
+        $('.btn-nota').click(function(){
+            var erros = 0;
+            $(".vote").each(function() {
+                if($(this).find("input:checked").length==0) {
+                    erros += 1;
+                }
+            });
+            if(erros>0) {
+                alert("É necessário informar a nota para cada pergunta.");
+            }
+
+        });
+    </script>
+
+</body>
+</html>

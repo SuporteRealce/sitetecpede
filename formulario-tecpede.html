@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="cabecalho">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="conteudo-cabelhaco">
+                        <a href="index.html">
+                            <img src="img/tecpede-logo-sistema.png" alt="" class="animate__animated animate__tada">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="formulario animate__animated animate__fadeInUp">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="conteudo-formulario">
+                        <img src="img/formulario/icone_cadastro.jpg" alt="" class="animate__animated animate__tada">
+                        <h1>Precisamos de algumas informações!</h1>
+                        <p><span>*</span> Preencha todos os campos corretamente</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 campo-selecionar">
+                    <div class="input">
+                        <div class="input-label">
+                            <label class="label">
+                                Você é uma pessoa:
+                            </label>
+                        </div>
+                        <div class="input-text">
+                            <select name="" class="input-style">
+                                <option value="0">Selecionar</option>
+                                <option value="cpf">Pessoa Física</option>
+                                <option value="cnpj">Pessoa Jurídica</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 campo-cpf animate__animated animate__fadeInUp">
+                    <div class="input">
+                        <div class="input-label">
+                            <label class="label">
+                                Informe seu cpf:
+                            </label>
+                        </div>
+                        <div class="input-text">
+                            <input type="tel" placeholder="Digite seu cpf..." class="cpf-mask">
+                        </div>
+                        <p class="erro erro-cpf">Por favor, digite um cpf válido.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 campo-cnpj animate__animated animate__fadeInUp">
+                    <div class="input">
+                        <div class="input-label">
+                            <label class="label">
+                                Informe seu cnpj:
+                            </label>
+                        </div>
+                        <div class="input-text">
+                            <input type="tel" placeholder="Digite seu cnpj..." class="cnpj-mask">
+                        </div>
+                        <p class="erro erro-cnpj">Por favor, digite um cnpj válido.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 campo-razao-social animate__animated animate__fadeInUp">
+                    <div class="input">
+                        <div class="input-label">
+                            <label class="label">
+                                Razão Social:
+                            </label>
+                        </div>
+                        <div class="input-text">
+                            <input type="text" placeholder="Digite sua razão social...">
+                        </div>
+                        <p class="erro erro-razao-social">Por favor, preencha com a sua razão social.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 campo-nome animate__animated animate__fadeInUp">
+                    <div class="input">
+                        <div class="input-label">
+                            <label class="label">
+                                Qual o seu nome?
+                            </label>
+                        </div>
+                        <div class="input-text">
+                            <input type="text" placeholder="Digite o seu nome completo...">
+                        </div>
+                        <p class="erro erro-nome">Por favor, preencha com o seu nome.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 campo-nome-responsavel animate__animated animate__fadeInUp">
+                    <div class="input">
+                        <div class="input-label">
+                            <label class="label">
+                                Nome do responsável pela empresa:
+                            </label>
+                        </div>
+                        <div class="input-text">
+                            <input type="text" placeholder="Digite o nome do responsável...">
+                        </div>
+                        <p class="erro erro-responsavel">Por favor, preecha com o nome do responsável.</p>
+                    </div>
+                </div>
+
+                <div class="separador"></div>
+
+                <div class="col-md-12 campo-email animate__animated animate__fadeInUp">
+                    <div class="input">
+                        <div class="input-label">
+                            <label class="label">
+                                Digite seu melhor e-mail:
+                            </label>
+                        </div>
+                        <div class="input-text">
+                            <input type="text" placeholder="Digite o seu e-mail...">
+                        </div>
+                        <p class="erro erro-email">Por favor, escreva um formulário válido</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 campo-senha1 animate__animated animate__fadeInUp">
+                    <div class="input">
+                        <div class="input-label">
+                            <label class="label">
+                                Crie uma senha:
+                            </label>
+                        </div>
+                        <div class="input-text">
+                            <input type="password" placeholder="Digite uma senha...">
+                            <div class="btn-password">
+                                <i class="fa fa-eye"></i>
+                            </div>
+                        </div>
+                        <p class="erro erro-senha">A senha deve ter no mínimo 4 caracteres.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 campo-senha2 animate__animated animate__fadeInUp">
+                    <div class="input">
+                        <div class="input-label">
+                            <label class="label">
+                                Repita a sua senha:
+                            </label>
+                        </div>
+                        <div class="input-text">
+                            <input type="password" placeholder="Repita a sua senha...">
+                            <div class="btn-password">
+                                <i class="fa fa-eye"></i>
+                            </div>
+                        </div>
+                        <p class="erro erro-senha2">As senhas devem ser iguais.</p>
+                    </div>
+                </div>
+
+                <div class="separador"></div>
+
+
+                <div class="wrapper campo-plano animate__animated animate__fadeInUp">
+                    <label class="label">
+                        Qual o plano que você deseja?
+                    </label>
+                    <input type="radio" name="select" id="option-1" checked>
+                    <input type="radio" name="select" id="option-2">
+                    <label for="option-1" class="option option-1">
+                        <div class="dot"></div>
+                        <span>Plano 1 - 12x de R$ 39,90</span>
+                    </label>
+                    <label for="option-2" class="option option-2">
+                        <div class="dot"></div>
+                        <span>Plano 2 - 1x de R$ 400,00</span>
+                    </label>
+                    <div class="col-md-12 campo-termo">
+                        <div class="termo">
+                            <label for="termo">
+                                <input type="checkbox" id="termo">
+                                Eu li e aceito todos os <a href="" data-toggle="modal" data-target="#exampleModal">Termos & Condições</a>.
+                            </label>
+                            <p class="erro erro-termo">É necessário concordar com os termos.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="separador"></div>
+
+                <div class="col-md-12 campo-botao animate__animated animate__fadeInUp">
+                    <div class="input-text">
+                        <input type="button" value="Concluir o cadastro">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="position-fixed bottom-0 right-0 p-3 alerta-erro" style="z-index: 5; right: 0px; bottom: 0px;">
+        <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="mr-auto">:/ Não foi possível concluir...</strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                Um ou mais campos não foram preenchidos corretamente!
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Termos & Condições</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <h1>Para você entender melhor como funciona esta plataforma</h1>
+
+                    <p>Fizemos o máximo para reduzir e simplificar as regras da nossa Plataforma. Por isso, separamos abaixo os pontos mais importantes para você, que também podem ser lidos de forma bem completa e detalhada nos Termos de Uso a seguir.</p>
+
+                    <p>Além disso, estamos sempre disponíveis para tirar qualquer dúvida que você tenha pelo e-mail suporte@tecpede.com.br e pelo chat online disponível na plataforma.</p>
+
+                    <ul>
+                        <li><p>Nosso negócio é uma plataforma eletrônica que possibilita a estabelecimentos do setor alimentício, a criação de um ambiente online de delivery. Por meio da plataforma o Usuário Administrador obterá, para sua empresa, a otimização do atendimento de pedidos do delivery online, através de funcionalidades como: ferramentas de marketing para ajudar aumentar as vendas do restaurante e fidelização de clientes; interação com gateways de pagamento para recebimento de pedidos online; integração com marketplace(s) para centralização de pedidos em um único gerenciador de pedidos; sistema de frente de caixa para registro e gestão de pedidos tanto do delivery quanto do salão; impressão de comandas; controle de caixa; controle de entregadores; painel administrativo com dashboard, gráficos e relatórios para acompanhamento de resultados.</p></li>
+
+                        <li><p>A <strong>TECPEDE</strong> não comercializa qualquer produto ou serviço para o consumidor final, é apenas a ferramenta que permite a criação de espaços digitais às empresas.</p> </li>
+
+                        <li><p>Os Usuários Administradores devem pagar valores para utilizar os serviços da <strong>TECPEDE</strong>. Os valores estarão disponíveis no site comercial da <strong>TECPEDE</strong>, www.tecpede.com.br, onde serão descritos os valores vigentes para cada plano, sendo que também será possível o envio de uma proposta personalizada caso o Usuário solicite a <strong>TECPEDE</strong>.</p></li>
+
+                        <li><p>Nos esforçamos bastante para que a nossa plataforma seja segura, mas ainda assim recomendamos que, antes de baixar qualquer conteúdo, você instale antivírus e programas de proteção.</p></li>
+
+                        <li><p>Nossos Termos de Uso poderão mudar, mas você sempre poderá acessar a versão mais atualizada na nossa plataforma. Além disso, se formos realizar alguma ação que a lei exija sua autorização, você receberá um aviso antes para poder aceitar ou recusar.</p></li>
+
+                        <li><p>Temos uma Política de Privacidade que trata sobre o que fazemos com os seus dados pessoais. É muito importante que você leia e entenda esse documento também!</p></li>
+
+                        <li>Os Termos de Uso a seguir estão divididos da seguinte forma para facilitar o seu acesso à informação:
+                            <ul>
+                                <li><p>Data de Disponibilização do Texto;</p></li>
+                                <li><p>Serviços;</p></li>
+                                <li><p>Cadastro dos Usuários;</p></li>
+                                <li><p>Pagamento pelo Uso da Plataforma;</p></li>
+                                <li><p>Responsabilidades das Partes;</p></li>
+                                <li><p>Isenção de Responsabilidade da TecPede</p></li>
+                                <li><p>Regras de Conduta e Proibições;</p></li>
+                                <li><p>Propriedade Intelectual</p></li>
+                                <li><p>Tratamento de Dados Pessoais, Privacidade e Segurança;</p></li>
+                                <li><p>Alterações dos Termos e Condições de Uso;</p></li>
+                                <li><p>Definição da Lei Aplicável, Foro de eleição e Arbitragem;</p></li>
+                                <li><p>Canal de Contato;</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p>Expresso Delivery.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        * { margin: 0px; padding: 0px; }
+        html, body { overflow-x: hidden; background: #f8f9fd; min-height: 100vh; padding-bottom: 20px; }
+
+        .modal-content, .modal-header, .modal-footer {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            border-radius: 0px;
+        }
+        .modal-body {
+            background-color: white;
+            border: none;
+            box-shadow: none;
+            border-radius: 5px;
+        }
+        .modal-body p {
+            margin: 0px;
+        }
+        .modal-header {
+            color: white;
+            opacity: 1;
+        }
+        .modal-header button {
+            opacity: 1;
+            font-weight: 100;
+            color: white;
+            font-size: 30px;
+        }
+        .modal-header button:hover {
+            color: white;
+        }
+
+        .cabecalho {
+            position: relative;
+            width: 100%;
+            background-color: #ff8c00;
+            height: 240px;
+        }
+        .conteudo-cabelhaco {
+            position: relative;
+            width: 100%;
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .cabecalho img {
+            width: 470px;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        .formulario {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            margin: 0px auto;
+            border-radius: 20px;
+            -webkit-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.15);
+            -moz-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.15);
+            box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.15);
+            margin-top: -50px;
+            background-color: white;
+            padding: 0px 30px;
+            padding-bottom: 40px;
+        }
+        .conteudo-formulario {
+            padding-top: 25px;
+            padding-bottom: 40px;
+            position: relative;
+            width: 100%;
+            text-align: center;
+        }
+        .conteudo-formulario img {
+            width: 130px;
+            margin: 0px auto;
+            text-align: center;
+            opacity: .3;
+            animation-delay: 1s;
+        }
+        .conteudo-formulario h1 {
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            color: #333;
+            margin: 0px;
+        }
+        .conteudo-formulario p {
+            color: #575757;
+            margin: 0px;
+            text-align: center;
+            font-size: 19px;
+            font-weight: 400;
+        }
+        .conteudo-formulario span {
+            color: red;
+        }
+        .formulario .input {
+            position: relative;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+        .formulario .input input[type="text"], .formulario .input select, .formulario .input input[type="password"], .formulario .input input[type="tel"] {
+            position: relative;
+            width: 100%;
+            height: 55px;
+            border-radius: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            outline: none;
+            -webkit-box-shadow: 0px 0px 28px -12px rgba(0,0,0,.10);
+            -moz-box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.10);
+            box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.10);
+            border: 1px solid #ccc;
+            transition: .1s all;
+        }
+        .formulario .input input[type="text"]:hover, .formulario .input select:hover,
+        .formulario .input input[type="text"]:focus, .formulario .input select:focus,
+        .formulario .input input[type="tel"]:hover, .formulario .input input[type="tel"]:focus
+        .formulario .input input[type="password"]:hover, .formulario .input input[type="password"]:focus {
+            -webkit-box-shadow: 0px 0px 28px -12px rgba(0,0,0,.25);
+            -moz-box-shadow: 0px 0px 28px -12px rgba(0,0,0,.25);
+            box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.25);
+            border-bottom: 3px solid #ff8c00;
+        }
+        .formulario input[type="radio"] {
+            position: relative;
+            padding: 20px;
+            -webkit-box-shadow: 0px 0px 28px -12px rgba(0,0,0,.15);
+            -moz-box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.15);
+            box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.15);
+            border: 1px solid red;
+        }
+        .formulario .input-text input[type="button"], .formulario .input-text input[type="submit"] {
+            margin-top: 10px;
+            position: relative;
+            width: 100%;
+            height: 65px;
+            border-radius: 4px;
+            -webkit-box-shadow: 0px 0px 28px -12px rgba(0,0,0,.15);
+            -moz-box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.15);
+            box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.15);
+            background-color: #ff8c00;
+            color: white;
+            outline: none;
+            border: none;
+            font-size: 18px;
+        }
+        .label {
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .input-text {
+            position: relative;
+        }
+        .btn-password {
+            position: absolute;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50px;
+            margin: 0px auto;
+            text-align: center;
+            top: 0px;
+            right: 0px;
+            background-color: #dcdcdc;
+            color: #575757;
+            border: 1px solid #ccc;
+        }
+
+       .toast, .toast-header {
+            background-color: #F44336;
+            color: white;
+       }
+       .toast-header strong {
+            font-size: 17px;
+       }
+       .toast-header {
+            align-items: flex-end;
+            flex-direction: row;
+       }
+       .toast button {
+            color: white;
+            opacity: 1;
+            box-shadow: none;
+            text-align: right;
+            font-weight: 100;
+            outline: none;
+       }
+       .toast button:hover {
+            color: white;
+       }
+       .formulario a {
+            color: #ff8c00;
+            text-decoration: underline;
+        }
+        .formulario input[type="checkbox"]:checked {
+            background-color: #ff8c00;
+        }
+        .formulario .termo {
+            padding-top: 20px;
+        }
+        .formulario .termo label {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .erro {
+            color: red;
+            font-weight: 500;
+            margin: 5px 5px;
+        }
+        .erro-input {
+            border: 1px solid red !important;
+        }
+        .campo-aparecer {
+            display: block !important;
+        }
+
+        .separador {
+            position: relative;
+            width: 100%;
+            height: 1px;
+            margin-top: 30px;
+            margin-bottom: 0px;
+        }
+
+        .campo-cpf, .campo-cnpj, .campo-razao-social, .campo-nome-responsavel, .campo-nome, .campo-email, .campo-senha1, .campo-senha2, .campo-plano, .campo-botao, .separador {
+            display: none;
+        }
+
+        .campo-cpf, .campo-cnpj {
+            animation-delay: .1s;
+        }
+        .campo-razao-social, .campo-nome {
+            animation-delay: .3s;
+        }
+        .campo-nome-responsavel {
+            animation-delay: .5s;
+        }
+        .campo-email {
+            animation-delay: .7s;
+        }
+        .campo-senha1, .campo-senha2 {
+            animation-delay: .9s;
+        }
+        .campo-plano {
+            animation-delay: 1.2s;
+        }
+
+        .wrapper{
+            position: relative;
+
+            background: #fff;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+        }
+        .wrapper .label {
+            padding-bottom: 10px;
+        }
+        .wrapper .option{
+          background: #fff;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          border-radius: 5px;
+          cursor: pointer;
+          padding: 20px 10px;
+          border: 2px solid lightgrey;
+          transition: all 0.3s ease;
+        }
+        .wrapper .option .dot{
+          height: 20px;
+          width: 20px;
+          background: #d9d9d9;
+          border-radius: 50%;
+          position: relative;
+        }
+        .wrapper .option .dot::before{
+          position: absolute;
+          content: "";
+          top: 4px;
+          left: 4px;
+          width: 12px;
+          height: 12px;
+          background: #ffbf00;
+          border-radius: 50%;
+          opacity: 0;
+          transform: scale(1.5);
+          transition: all 0.3s ease;
+        }
+        input[type="radio"]{
+          display: none;
+        }
+        #option-1:checked:checked ~ .option-1,
+        #option-2:checked:checked ~ .option-2{
+          border-color: #ffbf00;
+          background: #ffbf00;
+        }
+        #option-1:checked:checked ~ .option-1 .dot,
+        #option-2:checked:checked ~ .option-2 .dot{
+          background: #fff;
+        }
+        #option-1:checked:checked ~ .option-1 .dot::before,
+        #option-2:checked:checked ~ .option-2 .dot::before{
+          opacity: 1;
+          transform: scale(1);
+        }
+        .wrapper .option span{
+          font-size: 18px;
+          color: #808080;
+          padding-left: 10px;
+        }
+        #option-1:checked:checked ~ .option-1 span,
+        #option-2:checked:checked ~ .option-2 span{
+          color: black;
+        }
+
+        .modal-body {
+            padding: 30px;
+        }
+        .modal h1 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .modal-body p {
+            font-size: 17px;
+            color: #575757;
+            margin-bottom: 20px;
+        }
+        .modal-body ul {
+            padding-left: 40px;
+            list-style: auto;
+        }
+        .modal-body ul p {
+            font-size: 15px;
+            color: #333;
+        }
+        .modal-body ul ul {
+            padding-top: 20px;
+        }
+
+        @media screen and (max-width: 780px) {
+            .cabecalho img {
+                width: 100%;
+            }
+            .conteudo-cabelhaco {
+                height: 200px;
+            }
+
+
+            .formulario {
+                width: 100%;
+                padding: 20px 0px;
+            }
+            .conteudo-formulario {
+                padding-top: 0px;
+                padding-bottom: 20px;
+            }
+            .conteudo-formulario h1 {
+                margin-bottom: 10px;
+            }
+            .conteudo-formulario p {
+                font-size: 17px;
+            }
+        }
+    </style>
+
+    <script>
+        $('.alerta-erro').hide();
+        $('.erro').hide();
+
+        // função para selecionar tipo de cliente
+        $('.campo-selecionar select').on('change', function(){
+            if($('.campo-selecionar option:selected').val()=="cnpj"){
+                $('.campo-cpf').removeClass('campo-aparecer');
+                $('.campo-nome').removeClass('campo-aparecer');
+                $('.separador').removeClass('campo-aparecer');
+                $('.campo-cnpj').addClass('campo-aparecer');
+                $('.campo-razao-social').addClass('campo-aparecer');
+                $('.campo-nome-responsavel').addClass('campo-aparecer');
+                $('.separador').addClass('campo-aparecer');
+                $('.campo-email').addClass('campo-aparecer');
+                $('.campo-senha1').addClass('campo-aparecer');
+                $('.campo-senha2').addClass('campo-aparecer');
+                $('.campo-plano').addClass('campo-aparecer');
+                $('.campo-botao').addClass('campo-aparecer');
+                $('.formulario .input input').val("");
+                $('.erro').hide();
+                $('.formulario input').removeClass('erro-input');
+            }
+            if($('.campo-selecionar option:selected').val()=="cpf") {
+                $('.campo-cnpj').removeClass('campo-aparecer');
+                $('.campo-razao-social').removeClass('campo-aparecer');
+                $('.campo-nome-responsavel').removeClass('campo-aparecer');
+                $('.separador').addClass('campo-aparecer');
+                $('.campo-cpf').addClass('campo-aparecer');
+                $('.campo-nome').addClass('campo-aparecer');
+                $('.separador').addClass('campo-aparecer');
+                $('.campo-email').addClass('campo-aparecer');
+                $('.campo-senha1').addClass('campo-aparecer');
+                $('.campo-senha2').addClass('campo-aparecer');
+                $('.campo-plano').addClass('campo-aparecer');
+                $('.campo-botao').addClass('campo-aparecer');
+                $('.formulario .input input').val("");
+                $('.erro').hide();
+                $('.formulario input').removeClass('erro-input');
+            }
+            if($('.campo-selecionar option:selected').val()=="0") {
+                $('.campo-cnpj').removeClass('campo-aparecer');
+                $('.campo-razao-social').removeClass('campo-aparecer');
+                $('.campo-nome-responsavel').removeClass('campo-aparecer');
+                $('.separador').removeClass('campo-aparecer');
+                $('.campo-cpf').removeClass('campo-aparecer');
+                $('.campo-nome').removeClass('campo-aparecer');
+                $('.separador').removeClass('campo-aparecer');
+                $('.campo-email').removeClass('campo-aparecer');
+                $('.campo-senha1').removeClass('campo-aparecer');
+                $('.campo-senha2').removeClass('campo-aparecer');
+                $('.campo-plano').removeClass('campo-aparecer');
+                $('.campo-botao').removeClass('campo-aparecer');
+                $('.formulario .input input').val("");
+                $('.erro').hide();
+                $('.formulario input').removeClass('erro-input');
+            }
+        });
+
+        // função para alterar type password e text
+        $('.btn-password').on('click', function(){
+            $(this).toggleClass('btn-password-ativo');
+            $(this).find('i').toggleClass('fa-eye-slash');
+            if($(this).hasClass('btn-password-ativo')){
+                $(this).prev().attr('type', 'text');
+            } else {
+                $(this).prev().attr('type', 'password');
+            }
+        });
+
+        // função para validação
+        function validacaoCadastro() {
+            var res = '';
+            var cpf = $('.campo-cpf input');
+            var cnpj = $('.campo-cnpj input');
+            var nome = $('.campo-nome input');
+            var email = $('.campo-email input');
+            var senha1 = $('.campo-senha1 input');
+            var senha2 = $('.campo-senha2 input');
+            var razao = $('.campo-razao-social input');
+            var nomeResponsavel = $('.campo-nome-responsavel input');
+            var termo = $('.campo-termo input');
+
+            if(cpf.val().length<14){
+                $(cpf).addClass('erro-input');
+                $('.erro-cpf').show();
+            } else {
+                $(cpf).removeClass('erro-input');
+                $('.erro-cpf').hide();
+            }
+
+            if(cnpj.val().length<18){
+                $(cnpj).addClass('erro-input');
+                $('.erro-cnpj').show();
+            } else {
+                $(cnpj).removeClass('erro-input');
+                $('.erro-cnpj').hide();
+            }
+
+            if(nome.val().length<4){
+                $(nome).addClass('erro-input');
+                $('.erro-nome').show();
+            } else {
+                $(nome).removeClass('erro-input');
+                $('.erro-nome').hide();
+            }
+
+            if(razao.val().length<4){
+                $(razao).addClass('erro-input');
+                $('.erro-razao-social').show();
+            } else {
+                $(razao).removeClass('erro-input');
+                $('.erro-razao-social').hide();
+            }
+
+            if(nomeResponsavel.val().length<4){
+                $(nomeResponsavel).addClass('erro-input');
+                $('.erro-responsavel').show();
+            } else {
+                $(nomeResponsavel).removeClass('erro-input');
+                $('.erro-responsavel').hide();
+            }
+
+            if(email.val().indexOf('@')==-1 || email.val().indexOf('.')==-1 ){
+                $(email).addClass('erro-input');
+                $('.erro-email').show();
+            } else {
+                $(email).removeClass('erro-input');
+                $('.erro-email').hide();
+            }
+
+            if(senha1.val().length<4 || senha1.val()!=senha2.val()){
+                $(senha1).addClass('erro-input');
+                $('.erro-senha').show();
+                $(senha2).addClass('erro-input');
+                $('.erro-senha2').show();
+            } else {
+                $(senha1).removeClass('erro-input');
+                $('.erro-senha').hide();
+                $(senha2).removeClass('erro-input');
+                $('.erro-senha2').hide();
+            }
+
+            if(termo.is(':checked')==false){
+                $(termo).addClass('erro-input');
+                $('.erro-termo').show();
+            } else {
+                $(termo).removeClass('erro-input');
+                $('.erro-termo').hide();
+                //res = true;
+            }
+
+            return res;
+        }
+
+        // ao clicar no botão
+        $('.campo-botao input').click(function(){
+            if(validacaoCadastro()){
+                alert('tá certo');
+            } else {
+                $('.alerta-erro').show();
+            }
+
+            setTimeout(function(){
+                $('.alerta-erro').hide();
+            }, 5000);
+
+            $('html, body').animate({scrollTop: 0}, 'slow');
+            return false;
+        });
+
+        // jquery mask
+        $('.cpf-mask').mask('000.000.000-00');
+        $('.cnpj-mask').mask('00.000.000/0000-00');
+    </script>
+
+</body>
+</html>

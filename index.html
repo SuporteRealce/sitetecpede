@@ -9,6 +9,11 @@
 	<link rel="stylesheet" href="css/estilo.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap">
 
 	<script src="js/jquery.js"></script>
@@ -24,31 +29,38 @@
 	</script>
 </head>
 <body>
+
+	<div class="whatsapp">
+		<a href="https://api.whatsapp.com/send?phone=5543996630809&text=Olá,%20tudo%20bem?" target="_blank">
+			<img src="img/icon_whatsapp.png" alt="atendimento por whatsapp">
+		</a>
+	</div>
+
 	<div id="inicio" style="display: none;"></div>
 
 	<!-- header -->
 	<div class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-2">
 					<div class="conteudo-header">
 						<a href="index.html">
 							<img src="img/logo.png" alt="Tecpede || Sistema de Pedidos">
 						</a>
 					</div>
 				</div>
-				<div class="col-md-7">
+				<div class="col-md-9">
 					<div class="conteudo-header">
 						<ul>
 							<li><a href="#inicio" class="scroll">Página Inicial</a></li>
 							<li><a href="#recursos" class="scroll">Recursos</a></li>
 							<li><a href="#planos" class="scroll">Planos</a></li>
 							<li><a href="#contato" class="scroll">Fale Conosco</a></li>
-							<li><a href="#">Demonstração</a></li>
+							<li><a href="#planos" class="scroll">Quero Contratar</a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-1">
 					<div class="conteudo-header">
 						<ul class="social">
 							<li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
@@ -83,7 +95,7 @@
 						<li><a href="#recursos" class="scroll">Recursos</a></li>
 						<li><a href="#planos" class="scroll">Planos</a></li>
 						<li><a href="#contato" class="scroll">Fale Conosco</a></li>
-						<li><a href="#">Demonstração</a></li>
+						<li><a href="#planos" class="scroll">Demonstração</a></li>
 					</ul>
 				</div>
 			</div>
@@ -92,22 +104,84 @@
 
 	<!-- banner -->
 	<div class="banner">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-7">
-					<div class="conteudo-banner">
-						<p>Sistema Completo</p>
-						<h1>Automatize os seus pedidos de <span>delivery</span>.</h1>
-						<div class="btn-banner">
-							<a href="#">Saiba Mais</a>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+
+				<div class="swiper-slide" style="background-image: url('img/banner3.jpg');">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7">
+								<div class="conteudo-banner wow animate__bounceInLeft" style="animation-duration: 1s;">
+									<h1>Sem cobrança</h1>
+									<h1>de taxas</h1>
+									<h1><span>financeiras</span></h1>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="texto-maior wow animate__bounceInRight" style="animation-duration: 1.5s;">
+									<h1>///</h1>
+								</div>
+								<div class="content-text wow animate__bounceInRight" style="animation-duration: 1s;">
+									<img src="img/semtarifa.png" alt="" style="width: 100%;">
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-5">
-					<div class="bloco-img-banner">
-						<img src="img/img_mao_celular.png">
+
+				<div class="swiper-slide" style="background-image: url('img/banner2.jpg');">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7">
+								<div class="conteudo-banner wow animate__bounceInLeft" style="animation-duration: 1s;">
+									<h1>Otimize os atendimentos</h1>
+									<h1>por whatsapp</h1>
+									<h1>através do</h1>
+									<h1><span>cardápio online</span></h1>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="texto-maior wow animate__bounceInRight" style="animation-duration: 1.5s;">
+									<h1>///</h1>
+								</div>
+								<div class="content-text wow animate__bounceInRight" style="animation-duration: 1s;">
+									<video loop autoplay muted>
+										<source src="img/mp4.mp4" type="video/mp4">
+									</video>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="bloco-icone-banner"></div>
+				</div>
+
+				<div class="swiper-slide" style="background-image: url('img/banner1.jpg');">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7">
+								<div class="conteudo-banner wow animate__bounceInLeft" style="animation-duration: 1s;">
+									<h1>Agendamento</h1>
+									<h1><span>de pedidos</span></h1>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="texto-maior wow animate__bounceInRight" style="animation-duration: 1.5s;">
+									<h1>///</h1>
+								</div>
+								<div class="content-text wow animate__bounceInRight" style="animation-duration: 1s;">
+									<img src="img/agendamento.png" alt="" style="width: 130%;">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="grupo-btn-banner">
+				<div class="btn-banner-right">
+					<i class="fa fa-angle-right"></i>
+				</div>
+				<div class="btn-banner-left">
+					<i class="fa fa-angle-left"></i>
 				</div>
 			</div>
 		</div>
@@ -117,56 +191,96 @@
 	<div class="sobre">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-7">
-					<div class="conteudo-sobre conteudo-sobre-img">
-						<img src="img/img_sobre.png" alt="">
-					</div>
-				</div>
-				<div class="col-md-5">
+				<div class="col-md-12">
 					<div class="conteudo-sobre">
-						<h1>Automatize o seu atendimento online</h1>
+						<h1>Automatize o seu<br>atendimento online</h1>
 						<hr>
 						<p>Você recebe os pedidos feitos e não tem a necessidade de cadastrar nada. Ele veem conforme eles acontencem, somente para a aprovação e entrega.</p>
-						<div class="row">
-							<div class="col-md-6 col-6">
-								<div class="bloco-sobre">
-									<div class="bloco-sobre-icone">
-										<img src="img/icon01.png">
-									</div>
-									<div class="bloco-sobre-texto">
-										<h1>Simplifique o seu processo</h1>
-									</div>
-								</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="fluxograma">
+						<div class="bloco-fluxo">
+							<div class="bloco-fluxo-icone">
+								<img src="img/icone-zap.png" alt="">
 							</div>
-							<div class="col-md-6 col-6">
-								<div class="bloco-sobre">
-									<div class="bloco-sobre-icone">
-										<img src="img/icon025.png">
-									</div>
-									<div class="bloco-sobre-texto">
-										<h1>Simplifique o seu processo</h1>
-									</div>
-								</div>
+							<div class="bloco-fluxo-texto">
+								<p>1. Cliente entra em contato pelo whatsapp ou site do estabelecimento</p>
 							</div>
-							<div class="col-md-6 col-6">
-								<div class="bloco-sobre">
-									<div class="bloco-sobre-icone">
-										<img src="img/icon03.png">
-									</div>
-									<div class="bloco-sobre-texto">
-										<h1>Simplifique o seu processo</h1>
-									</div>
-								</div>
+						</div>
+						<div class="bloco-fluxo bloco-fluxo-seta">
+							<img src="img/icone-seta2.png" alt="">
+						</div>
+						<div class="bloco-fluxo">
+							<div class="bloco-fluxo-icone">
+								<img src="img/fluxo2.png" alt="">
 							</div>
-							<div class="col-md-6 col-6">
-								<div class="bloco-sobre">
-									<div class="bloco-sobre-icone">
-										<img src="img/icon04.png">
-									</div>
-									<div class="bloco-sobre-texto">
-										<h1>Simplifique o seu processo</h1>
-									</div>
-								</div>
+							<div class="bloco-fluxo-texto">
+								<p>2. É possível configurar o whatsapp para direcionar automaticamente os clientes para o cardápio online</p>
+							</div>
+						</div>
+						<div class="bloco-fluxo bloco-fluxo-seta">
+							<img src="img/icone-seta2.png" alt="">
+						</div>
+						<div class="bloco-fluxo">
+							<div class="bloco-fluxo-icone">
+								<img src="img/fluxo3.png" alt="">
+							</div>
+							<div class="bloco-fluxo-texto">
+								<p>3. Pelo cardápio online é possível visualizar todos os produtos e adicionar ao pedido</p>
+							</div>
+						</div>
+					</div>
+					<div class="fluxograma">
+						<div class="bloco-fluxo">
+							<div class="bloco-fluxo-icone">
+								<img src="img/fluxo4.png" alt="">
+							</div>
+							<div class="bloco-fluxo-texto">
+								<p>4. O cliente informa qual o tipo de entrega: delivery ou retirada no balcão</p>
+							</div>
+						</div>
+						<div class="bloco-fluxo bloco-fluxo-seta">
+							<img src="img/icone-seta2.png" alt="">
+						</div>
+						<div class="bloco-fluxo">
+							<div class="bloco-fluxo-icone">
+								<img src="img/fluxo5.png" alt="">
+							</div>
+							<div class="bloco-fluxo-texto">
+								<p>5. O estabelecimento recebe o pedido </p>
+							</div>
+						</div>
+						<div class="bloco-fluxo bloco-fluxo-seta">
+							<img src="img/icone-seta2.png" alt="">
+						</div>
+						<div class="bloco-fluxo">
+							<div class="bloco-fluxo-icone">
+								<img src="img/fluxo6.png" alt="">
+							</div>
+							<div class="bloco-fluxo-texto">
+								<p>6. O estabelecimento pode imprimir o pedido e mudar o status para Pedido em preparação</p>
+							</div>
+						</div>
+					</div>
+					<div class="fluxograma" style="justify-content: center;">
+						<div class="bloco-fluxo">
+							<div class="bloco-fluxo-icone">
+								<img src="img/fluxo7.png" alt="">
+							</div>
+							<div class="bloco-fluxo-texto">
+								<p>7. Ao finalizar a preparação do pedido, o estabelecimento pode alterar o status para Pedido pronto para entrega</p>
+							</div>
+						</div>
+						<div class="bloco-fluxo bloco-fluxo-seta">
+							<img src="img/icone-seta2.png" alt="">
+						</div>
+						<div class="bloco-fluxo">
+							<div class="bloco-fluxo-icone">
+								<img src="img/fluxo8.png" alt="">
+							</div>
+							<div class="bloco-fluxo-texto">
+								<p>8. O cliente pode avaliar o estabelecimento</p>
 							</div>
 						</div>
 					</div>
@@ -181,49 +295,168 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="conteudo-ferramenta">
-						<p>ferramentas</p>
-						<h1>Temos várias funcionalidades para<br> auxiliar na sua gestão</h1>
+						<h1>Temos <span>várias ferramentas</span> para<br> auxiliar na sua gestão</h1>
 					</div>
 				</div>
-				<div class="col-md-3">
-					<div class="bloco-ferramenta">
-						<div class="bloco-ferramenta-icone">
-							<img src="img/icon01.png" alt="">
-						</div>
-						<div class="bloco-ferramenta-texto">
-							<h1>Amazing Colors</h1>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="bloco-ferramenta">
-						<div class="bloco-ferramenta-icone">
-							<img src="img/icon05.png" alt="">
-						</div>
-						<div class="bloco-ferramenta-texto">
-							<h1>Amazing Colors</h1>
+
+				<div class="col-md-6">
+					<div class="box-ferramenta">
+						<!-- <div class="box-ferramenta-icone">
+							<a href="img/img-teste.jpg" data-lightbox="Fidelização de clientes" data-title="Fidelização de clientes - Crie promoções para clientes que compram com frequência, oferecendo desconto parcial ou total a partir de determinado número de pedidos">
+								<div class="box-img-ferramenta" style="background-image: url('img/img-teste.jpg');">
+								</div>
+							</a>
+						</div> -->
+						<div class="box-ferramenta-texto">
+							<h1>Fidelização de clientes</h1>
+							<p>Crie promoções para clientes que compram com frequência, oferecendo desconto parcial ou total a partir de determinado número de pedidos</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
-					<div class="bloco-ferramenta">
-						<div class="bloco-ferramenta-icone">
-							<img src="img/icon06.png" alt="">
-						</div>
-						<div class="bloco-ferramenta-texto">
-							<h1>Amazing Colors</h1>
+				<div class="col-md-6">
+					<div class="box-ferramenta">
+						<!-- <div class="box-ferramenta-icone">
+							<a href="img/img-teste.jpg" data-lightbox="Fidelização de clientes" data-title="Fidelização de clientes - Crie promoções para clientes que compram com frequência, oferecendo desconto parcial ou total a partir de determinado número de pedidos">
+								<div class="box-img-ferramenta" style="background-image: url('img/img-teste.jpg');">
+								</div>
+							</a>
+						</div> -->
+						<div class="box-ferramenta-texto">
+							<h1>Otimização de tempo</h1>
+							<p>Não perca tempo respondendo whatsapp, deixe que o cliente visualize as opções disponíveis pelo site e conclua o pedido</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
-					<div class="bloco-ferramenta">
-						<div class="bloco-ferramenta-icone">
-							<img src="img/icon07.png" alt="">
-						</div>
-						<div class="bloco-ferramenta-texto">
-							<h1>Amazing Colors</h1>
+				<div class="col-md-6">
+					<div class="box-ferramenta">
+						<!-- <div class="box-ferramenta-icone">
+							<a href="img/img-teste.jpg" data-lightbox="Fidelização de clientes" data-title="Fidelização de clientes - Crie promoções para clientes que compram com frequência, oferecendo desconto parcial ou total a partir de determinado número de pedidos">
+								<div class="box-img-ferramenta" style="background-image: url('img/img-teste.jpg');">
+								</div>
+							</a>
+						</div> -->
+						<div class="box-ferramenta-texto">
+							<h1>Acompanhamento do pedido</h1>
+							<p>Após finalizar o pedido, o cliente poderá acompanhar a situação: Aguardando visualização, pedido em preparação, disponível para entrega/saiu para entrega</p>
 						</div>
 					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="box-ferramenta">
+						<!-- <div class="box-ferramenta-icone">
+							<a href="img/img-teste.jpg" data-lightbox="Fidelização de clientes" data-title="Fidelização de clientes - Crie promoções para clientes que compram com frequência, oferecendo desconto parcial ou total a partir de determinado número de pedidos">
+								<div class="box-img-ferramenta" style="background-image: url('img/img-teste.jpg');">
+								</div>
+							</a>
+						</div> -->
+						<div class="box-ferramenta-texto">
+							<h1>Site personalizado com cardápio online</h1>
+							<p>Configure rapidamente o site com a logo e cores da sua marca</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="box-ferramenta">
+						<!-- <div class="box-ferramenta-icone">
+							<a href="img/img-teste.jpg" data-lightbox="Fidelização de clientes" data-title="Fidelização de clientes - Crie promoções para clientes que compram com frequência, oferecendo desconto parcial ou total a partir de determinado número de pedidos">
+								<div class="box-img-ferramenta" style="background-image: url('img/img-teste.jpg');">
+								</div>
+							</a>
+						</div> -->
+						<div class="box-ferramenta-texto">
+							<h1>Gestão eficiente de pedidos</h1>
+							<p>- O estabelecimento é avisado sempre que houver um novo pedido</p>
+							<p>- Possibilidade de recusa ou cancelamento do pedido pelo estabelecimento</p>
+							<p>- Geração de relatórios de vendas no período desejado</p>
+							<p>- Saiba quantos pedidos cada entregador realizou</p>
+							<p>- Evite erros indesejados</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="box-ferramenta">
+						<!-- <div class="box-ferramenta-icone">
+							<a href="img/img-teste.jpg" data-lightbox="Fidelização de clientes" data-title="Fidelização de clientes - Crie promoções para clientes que compram com frequência, oferecendo desconto parcial ou total a partir de determinado número de pedidos">
+								<div class="box-img-ferramenta" style="background-image: url('img/img-teste.jpg');">
+								</div>
+							</a>
+						</div> -->
+						<div class="box-ferramenta-texto">
+							<h1>Várias opções de pagamento disponíveis aos clientes</h1>
+							<p>- Cartão de Crédito - presencial</p>
+							<p>- Cartão de Débito - presencial</p>
+							<p>- Dinheiro</p>
+							<p>- Cartão de Crédito online (Mercadopago - receba na hora)</p>
+							<p>- PIX (Mercadopago - receba na hora)</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12">
+					<div class="btn-ferramenta">
+						<button onclick="window.location.href='videos.html'">Ver os vídeos demonstrativos</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="container-fluid">
+				<div class="col-md-12">
+						<div class="swiper-container-ferramenta">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="swiper-ferramenta" style="background-image: url('img/img-teste.jpg');">
+										<a href="img/img-teste.jpg" data-lightbox="Fidelização de clientes">
+											<div class="shadow-ferramenta" ></div>
+										</a>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="swiper-ferramenta" style="background-image: url('img/img-slide2.jpg');">
+										<a href="img/img-slide2.jpg" data-lightbox="Fidelização de clientes">
+											<div class="shadow-ferramenta"></div>
+										</a>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="swiper-ferramenta" style="background-image: url('img/img-slide3.jpg');">
+										<a href="img/img-slide3.jpg" data-lightbox="Fidelização de clientes">
+											<div class="shadow-ferramenta"></div>
+										</a>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="swiper-ferramenta" style="background-image: url('img/img-slide4.jpg');">
+										<a href="img/img-slide4.jpg" data-lightbox="Fidelização de clientes">
+											<div class="shadow-ferramenta"></div>
+										</a>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="swiper-ferramenta" style="background-image: url('img/img-slide5.jpg');">
+										<a href="img/img-slide5.jpg" data-lightbox="Fidelização de clientes">
+											<div class="shadow-ferramenta"></div>
+										</a>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="swiper-ferramenta" style="background-image: url('img/img-slide6.jpg');">
+										<a href="img/img-slide6.jpg" data-lightbox="Fidelização de clientes">
+											<div class="shadow-ferramenta"></div>
+										</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
 				</div>
 			</div>
 		</div>
@@ -235,19 +468,155 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="bloco-plano">
-						<p>nosso plano</p>
-						<h1>100<span>00</span></h1>
+						<h3>Nosso Plano</h3>
+						<p>Confira abaixo as vantagens de assinar conosco.</p>
+						<!-- <h1>100<span>00</span></h1> -->
 						<ul>
-							<li>+50 pro widgets</li>
-							<li>300+ Pro Templates</li>
+							<li><img src="img/icon-correto.png"> +50 pro widgets</li>
+							<li><img src="img/icon-correto.png"> 300+ Pro Templates</li>
+							<li><img src="img/icon-correto.png"> +50 pro widgets</li>
+							<li><img src="img/icon-correto.png"> 300+ Pro Templates</li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-6">
 					<div class="conteudo-plano">
-						<h1>Automatize o seu atendimento online</h1>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit excepturi animi, in velit error ex, facere adipisci corporis, qui id praesentium nemo. Modi, repudiandae unde?</p>
+						<h1>Plano Anual</h1>
+						<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<h4><span>Equivalente a</span><br><span>R$ </span>39,90<span>/mês</span></h4>
+						    	<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">À vista</a>
+						  	</li>
+	  						<li class="nav-item" role="presentation">
+	  							<h4><span>Equivalente a</span><br><span>R$ </span>49,90<span>/mês</span></h4>
+	    						<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Parcelado em 12x no cartão</a>
+	  						</li>
+						</ul>
+						<div class="tab-content" id="pills-tabContent">
+	  						<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+								<p>12 x R$ 49,90 no cartão de crédito ou?</p>
+	  						</div>
+	  						<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+	  							<p>à vista com desconto, equivalente a R$ 39,90 por mês</p>
+	  						</div>
+						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- perguntas -->
+	<div class="faq">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>FAQ - Dúvidas Frequentes</h1>
+
+					<div class="accordion" id="accordionExample">
+						<div class="card">
+					    	<div class="card-header" id="headingOne">
+					      		<h2 class="mb-0">
+					        		<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-angle-right"></i> Qual o prazo de implantação do sistema?</button>
+					      		</h2>
+					    	</div>
+
+					    	<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+					      		<div class="card-body">Assim que o pagamento for confirmado pelos nossos sistema, você poderá acessar o painel para configurar o seu estabelecimento. Caso a forma de pagamento seja através de cartão de crédito ou PIX, o acesso será liberado em poucos minutos.</div>
+					    	</div>
+					  	</div>
+
+					  	<div class="card">
+					    	<div class="card-header" id="headingTwo">
+					      		<h2 class="mb-0">
+					        		<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-angle-right"></i> É necessário instalar algum programa?</button>
+					      		</h2>
+					    	</div>
+
+					    	<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+					      		<div class="card-body">O nosso sistema funciona totalmente online e, portanto, não precisa fazer nenhuma instalação.</div>
+					    	</div>
+					  	</div>
+
+					  	<div class="card">
+					    	<div class="card-header" id="headingThree">
+					      		<h2 class="mb-0">
+					        		<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-angle-right"></i> Quais são as configurações mínimas exigidas?</button>
+					      		</h2>
+					    	</div>
+					    	<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+					      		<div class="card-body">O Tecpede foi projetado para funcionar em praticamente todos os dispositivos que possuam navegador de internet. O sistema foi testado em diversas plataformas como Windows, Linux, Android e iOS com sucesso.</div>
+					    	</div>
+					  	</div>
+
+					  	<div class="card">
+					    	<div class="card-header" id="heading4">
+					      		<h2 class="mb-0">
+					        		<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#headingfour" aria-expanded="false" aria-controls="headingfour"><i class="fa fa-angle-right"></i> Posso disponibilizar apenas pagamento presencial aos meus clientes?</button>
+					      		</h2>
+					    	</div>
+					    	<div id="headingfour" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+					      		<div class="card-body">Sim, o estabelecimento pode optar por disponibilizar somente pagamentos presenciais ou também pode liberar pagamentos pelo sistema online.</div>
+					    	</div>
+					  	</div>
+
+					  	<div class="card">
+					    	<div class="card-header" id="heading5">
+					      		<h2 class="mb-0">
+					        		<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#headingfive" aria-expanded="false" aria-controls="headingfive"><i class="fa fa-angle-right"></i> O Tecpede cobra alguma tarifa por venda?</button>
+					      		</h2>
+					    	</div>
+					    	<div id="headingfive" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+					      		<div class="card-body">Não. As vendas realizadas com pagamento presencial (no momento da entrega) não possuem tarifas. O estabelecimento pode optar por disponibilizar pagamentos online por cartão de crédito ou PIX, porém existem tarifas de intermediação cobradas pelo Mercadopago.</div>
+					    	</div>
+					  	</div>
+
+					  	<div class="card">
+					    	<div class="card-header" id="heading6">
+					      		<h2 class="mb-0">
+					        		<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#headingsix" aria-expanded="false" aria-controls="headingsix"><i class="fa fa-angle-right"></i> O estabelecimento pode cancelar algum pedido realizado por cliente?</button>
+					      		</h2>
+					    	</div>
+					    	<div id="headingsix" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+					      		<div class="card-body">Sim. O sistema permite que um pedido seja cancelado pelo estabelecimento a qualquer momento, permitindo, inclusive, a descrição do motivo.</div>
+					    	</div>
+					  	</div>
+
+					  	<div class="card">
+					    	<div class="card-header" id="heading7">
+					      		<h2 class="mb-0">
+					        		<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#headingseven" aria-expanded="false" aria-controls="headingseven"><i class="fa fa-angle-right"></i> Há algum limite de uso ou cadastro no sistema?</button>
+					      		</h2>
+					    	</div>
+					    	<div id="headingseven" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
+					      		<div class="card-body">Não existe nenhuma limitação na utilização do sistema. Cadastro de pedidos, usuários e  produtos ilimitados. Fique livre para usar o sistema como desejar.</div>
+					    	</div>
+					  	</div>
+
+					  	<div class="card">
+					    	<div class="card-header" id="heading8">
+					      		<h2 class="mb-0">
+					        		<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#headingeight" aria-expanded="false" aria-controls="headingeight"><i class="fa fa-angle-right"></i> É possível imprimir os pedidos para várias impressoras?</button>
+					      		</h2>
+					    	</div>
+					    	<div id="headingeight" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+					      		<div class="card-body">Sim. Ao clicar em imprimir pedido, será exibida a janela de impressoras instaladas. Basta escolher em qual deseja enviar.</div>
+					    	</div>
+					  	</div>
+
+					  	<div class="card">
+					    	<div class="card-header" id="heading9">
+					      		<h2 class="mb-0">
+					        		<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#headingnine" aria-expanded="false" aria-controls="headingnine"><i class="fa fa-angle-right"></i> Os clientes poderão realizar pedidos pelo celular ou computador?</button>
+					      		</h2>
+					    	</div>
+					    	<div id="headingnine" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
+					      		<div class="card-body">Sim, o Tecpede foi projetado para se adaptar às telas de computadores e também smartphones. Desde que o aparelho de telefone ou computador tenha navegador e acesso à internet, é possível fazer os pedidos.</div>
+					    	</div>
+					  	</div>
+
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -259,30 +628,43 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="conteudo-contato">
-						<h1>Entre em Contato</h1>
-						<div class="row">
-							<div class="col-md-6">
-								<input type="text" placeholder="Nome">
+						<h1>Ficou com alguma dúvida?</h1>
+						<p>Fale conosco, te retornaremos o mais rápido possível!</p>
+						<form method="get" action="formulario.php" id="formulario">
+							<div class="row">
+								<div class="col-md-12">
+									<input type="text" placeholder="Nome" class="input-nome">
+									<h6>por favor, preencha o campo nome</h6>
+								</div>
+								<div class="col-md-6">
+									<input type="text" placeholder="E-mail" class="input-email">
+									<h6>por favor, preencha o campo e-mail correntamente</h6>
+								</div>
+								<div class="col-md-6">
+									<input type="text" placeholder="Telefone" class="mask-telefone">
+									<h6>por favor, preencha com um telefone válido</h6>
+								</div>
+								<div class="col-md-12">
+									<input type="text" placeholder="Assunto" class="input-assunto">
+									<h6>por favor, preencha o campo de assunto</h6>
+								</div>
+								<div class="col-md-12">
+									<textarea placeholder="Mensagem" class="input-mensagem"></textarea>
+									<h6>por favor, preencha com uma mensagem</h6>
+								</div>
+								<div class="col-md-12">
+									<input type="hidden" name="secretField" value="badValueEqualsBadClient">
+								</div>
+								<div class="col-md-12">
+									<input type="button" value="Enviar">
+								</div>
+								<div class="col-md-12">
+									<div class="enviado alert alert-success" role="alert">
+									  Mensagem enviada com sucesso, em breve te retornaremos!
+									</div>
+								</div>
 							</div>
-							<div class="col-md-6">
-								<input type="text" placeholder="Sobrenome">
-							</div>
-							<div class="col-md-6">
-								<input type="text" placeholder="Email">
-							</div>
-							<div class="col-md-6">
-								<input type="text" placeholder="Telefone">
-							</div>
-							<div class="col-md-12">
-								<input type="text" placeholder="Assunto">
-							</div>
-							<div class="col-md-12">
-								<textarea placeholder="Mensagem"></textarea>
-							</div>
-							<div class="col-md-12">
-								<input type="submit" value="Enviar">
-							</div>
-						</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -296,10 +678,10 @@
 				<div class="col-md-3">
 					<div class="bloco-rede">
 						<div class="bloco-rede-icone">
-							<i class="fa fa-paper-plane"></i>
+							<i class="fa fa-envelope"></i>
 						</div>
 						<div class="bloco-rede-texto">
-							<p><span>E-mail:</span><br>contato@nomeaqui.com.br</p>
+							<p><span>E-mail:</span><br>contato@tecpede.com.br</p>
 						</div>
 					</div>
 				</div>
@@ -309,7 +691,7 @@
 							<i class="fa fa-phone"></i>
 						</div>
 						<div class="bloco-rede-texto">
-							<p><span>Telefone:</span><br>(43) 99688-8652</p>
+							<p><span>Telefone:</span><br>(43) 3426-9500</p>
 						</div>
 					</div>
 				</div>
@@ -319,7 +701,7 @@
 							<i class="fa fa-whatsapp"></i>
 						</div>
 						<div class="bloco-rede-texto">
-							<p><span>Whatsapp:</span><br>(43) 99688-8652</p>
+							<p><span>Whatsapp:</span><br>(43) 99663-0809</p>
 						</div>
 					</div>
 				</div>
@@ -329,7 +711,7 @@
 							<i class="fa fa-map-marker"></i>
 						</div>
 						<div class="bloco-rede-texto">
-							<p><span>Endereço:</span><br>Rua Apenas um teste, 433 - centro - Apucarana/PR</p>
+							<p><span>Endereço:</span><br>R. Bandeirantes, 433 - Centro - Apucarana/PR</p>
 						</div>
 					</div>
 				</div>
@@ -344,6 +726,7 @@
 				<div class="col-md-3">
 					<div class="conteudo-footer">
 						<img src="img/logo.png" alt="Tecpede || Sistema de Pedidos">
+						<img src="" alt="">
 					</div>
 				</div>
 				<div class="col-md-9">
@@ -353,7 +736,7 @@
 							<li><a href="#recursos" class="scroll">Recursos</a></li>
 							<li><a href="#planos" class="scroll">Planos</a></li>
 							<li><a href="#contato" class="scroll">Fale Conosco</a></li>
-							<li><a href="#">Demonstração</a></li>
+							<li><a href="#planos" class="scroll">Demonstração</a></li>
 						</ul>
 					</div>
 				</div>
@@ -365,10 +748,207 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<p>Todos os direitos estao reservados.</p>
+					<p><i class="fa fa-copyright"></i> Todos os direitos estao reservados para TecPede.</p>
 				</div>
 			</div>
 		</div>
 	</footer>
+
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="display: none;">
+	  Launch demo modal
+	</button>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="contato">
+				<h1>Ficou com alguma dúvida?</h1>
+				<p>Fale conosco, podemos te ajudar</p>
+				<form method="get" action="formulario.php" id="formulario">
+				<div class="row">
+					<div class="col-md-12">
+						<input type="text" placeholder="Nome" class="input-nome">
+						<h6>por favor, preencha o campo nome</h6>
+					</div>
+					<div class="col-md-6">
+						<input type="text" placeholder="E-mail" class="input-email">
+						<h6>por favor, preencha o campo e-mail correntamente</h6>
+					</div>
+					<div class="col-md-6">
+						<input type="text" placeholder="Telefone" class="mask-telefone">
+						<h6>por favor, preencha com um telefone válido</h6>
+					</div>
+					<div class="col-md-12">
+						<input type="text" placeholder="Assunto" class="input-assunto">
+						<h6>por favor, preencha o campo de assunto</h6>
+					</div>
+					<div class="col-md-12">
+						<input type="hidden" name="secretField" value="badValueEqualsBadClient">
+					</div>
+					<div class="col-md-12">
+						<input type="button" value="Enviar">
+					</div>
+					<div class="col-md-12">
+						<div class="enviado alert alert-success" role="alert">
+							Mensagem enviada com sucesso, em breve te retornaremos!
+						</div>
+					</div>
+				</div>
+				</form>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/jquery.mask.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script>
+		$('.faq .card-header').on('click', function(){
+			$(".card").find(".card-header").find("i").removeClass("fa-angle-down");
+			var divPai = $(this).parents(".card").first();
+
+			$(divPai).find(".card-header").find("i").toggleClass("fa-angle-down");
+		});
+
+		new WOW().init();
+
+		var swiper = new Swiper('.swiper-container', {
+			loop: true,
+			navigation: {
+				nextEl: '.btn-banner-right',
+				prevEl: '.btn-banner-left'
+			},
+			autoplay: {
+	          delay: 22000,
+	          disableOnInteraction: false,
+	        },
+		});
+
+		var swiper2 = new Swiper('.swiper-container-ferramenta', {
+			slidesPerView: 4,
+			spaceBetween: 30,
+			loop: true,
+			autoplay: {
+	          delay: 2500,
+	          disableOnInteraction: false,
+	        },
+		});
+
+		var SPMask = function(val) {
+			return val.replace(/\D/g,'').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+		},
+		spOptions = {
+			onKeyPress: function(val, e, field, options){
+				field.mask(SPMask.apply({}, arguments), options);
+			}
+		};
+
+		$('.mask-telefone').mask(SPMask, spOptions);
+
+		function checkForm() {
+    		$('input[name=secretField]').val('goodValueEqualsGoodClient');
+    		return true;
+    	};
+
+		function validacao() {
+			var res = "";
+
+			if($('.input-nome').val()=='') {
+				$('.input-nome').addClass('erro-formulario');
+				$('.input-nome').next('h6').show();
+				res += "por favor, preencha o campo nome \r\n";
+			} else {
+				$('.input-nome').removeClass('erro-formulario');
+				$('.input-nome').addClass('correto-formulario');
+				$('.input-nome').next('h6').hide();
+			}
+
+			if($('.input-email').val()=='' || $('.input-email').val().indexOf('.') == -1 || $('.input-email').val().indexOf('@') == -1){
+				$('.input-email').addClass('erro-formulario');
+				$('.input-email').next('h6').show();
+				res += "por favor, preencha corretamente o campo de e-mail \r\n";
+			} else {
+				$('.input-email').removeClass('erro-formulario');
+				$('.input-email').addClass('correto-formulario');
+				$('.input-email').next('h6').hide();
+			}
+
+			if($('.mask-telefone').val()=='') {
+				$('.mask-telefone').addClass('erro-formulario');
+				$('.mask-telefone').next('h6').show();
+				res += "por favor, preencha o campo de telefone \r\n";
+			} else {
+				$('.mask-telefone').removeClass('erro-formulario');
+				$('.mask-telefone').addClass('correto-formulario');
+				$('.mask-telefone').next('h6').hide();
+			}
+
+			if($('.input-assunto').val()=='') {
+				$('.input-assunto').addClass('erro-formulario');
+				$('.input-assunto').next('h6').show();
+				res += "por favor, preencha o campo assunto \r\n";
+			} else {
+				$('.input-assunto').removeClass('erro-formulario');
+				$('.input-assunto').addClass('correto-formulario');
+				$('.input-assunto').next('h6').hide();
+			}
+
+			if($('.input-mensagem').val()=='') {
+				$('.input-mensagem').addClass('erro-formulario');
+				$('.input-mensagem').next('h6').show();
+				res += "por favor, preencha o campo mensagem \r\n";
+			} else {
+				$('.input-mensagem').removeClass('erro-formulario');
+				$('.input-mensagem').addClass('correto-formulario');
+				$('.input-mensagem').next('h6').hide();
+			}
+
+			return res;
+		}
+
+		$('input[type=button]').click(function(){
+			var validar = validacao();
+			if(validar==""){
+				$.ajax({
+					url: 'formulario.php',
+					method: 'GET',
+					data: {
+						nome: $('.input-nome').val(),
+						email: $('.input-email').val(),
+						telefone: $('.mask-telefone').val(),
+						assunto: $('.input-assunto').val(),
+						mensagem: $('.input-mensagem').val(),
+						secretField: $('input[name=secretField]').val(),
+					},
+					success: function(data){
+						checkForm();
+						$('.enviado').show();
+						$('#formulario')[0].reset();
+						$('.contato').find('.correto-formulario').removeClass('correto-formulario');
+						setTimeout(function(){
+							$('.enviado').hide();
+						}, 3000);
+					},
+					error: function(data){
+						alert('falhou');
+					},
+				});
+			} else {
+				//alert('algum problema');
+			}
+		});
+	</script>
 </body>
 </html>

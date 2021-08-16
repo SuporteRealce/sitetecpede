@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="cabecalho">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="conteudo-cabelhaco">
+                        <a href="index.html">
+                            <img src="img/tecpede-logo-sistema.png" alt="" class="animate__animated animate__tada">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="conteudo-video">
+                        <div class="conteudo-formulario">
+                            <h1>Veja as funcionalidades do nosso sistema</h1>
+                            <p><span>*</span> Vídeos para demonstração</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="box-video" data-toggle="modal" data-target="#modalVideo">
+                        <div class="shadow-video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/AIcQhHET7Zs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p>apenas testando</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="box-video">
+                        <div class="shadow-video"></div>
+                        <p>apenas testando</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box-video">
+                        <div class="shadow-video"></div>
+                        <p>apenas testando</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="box-video">
+                        <div class="shadow-video"></div>
+                        <p>apenas testando</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalVideo" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalVideoLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <video src="">
+                        <source>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCadastroVideo" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalCadastroVideoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCadastroVideoLabel">Acesso aos vídeos</h5>
+                </div>
+                <div class="modal-body">
+                    <label for="">Digite o seu para ter acesso aos vídeos:</label>
+                    <input type="text" placeholder="Digite o seu email aqui...">
+                    <p class="erro erro-email">É necessário inserir um e-mail válido.</p>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" value="Quero ver os vídeos">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        * { margin: 0px; padding: 0px; }
+        html, body { overflow-x: hidden; background: #f8f9fd; min-height: 100vh; padding-bottom: 20px; }
+
+        /*modal padrão*/
+        .modal-content, .modal-header, .modal-footer {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            border-radius: 0px;
+        }
+        .modal-body {
+            background-color: white;
+            border: none;
+            box-shadow: none;
+            border-radius: 5px;
+        }
+        .modal-body p {
+            margin: 0px;
+        }
+        .modal-header {
+            color: white;
+            opacity: 1;
+        }
+        .modal-header button {
+            opacity: 1;
+            font-weight: 100;
+            color: white;
+            font-size: 30px;
+        }
+        .modal-header button:hover {
+            color: white;
+        }
+
+        iframe {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        /*.cabecalho*/
+        .cabecalho {
+            position: relative;
+            width: 100%;
+            background-color: #ff8c00;
+            height: 240px;
+        }
+        .conteudo-cabelhaco {
+            position: relative;
+            width: 100%;
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .cabecalho img {
+            width: 470px;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        /*video*/
+        .video {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            margin: 0px auto;
+            border-radius: 20px;
+            -webkit-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.15);
+            -moz-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.15);
+            box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.15);
+            margin-top: -50px;
+            background-color: white;
+            padding: 0px 30px;
+            padding-bottom: 40px;
+        }
+        .conteudo-video {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            position: relative;
+            width: 100%;
+            text-align: center;
+        }
+        .conteudo-video h1 {
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            color: #333;
+            margin: 0px;
+        }
+        .conteudo-video p {
+            color: #575757;
+            margin: 0px;
+            text-align: center;
+            font-size: 19px;
+            font-weight: 400;
+        }
+        .conteudo-video span {
+            color: red;
+        }
+
+        /*box video*/
+        .box-video {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            border-radius: 20px;
+            -webkit-box-shadow: 0px 0px 48px -2px rgba(0,0,0,0.1);
+            -moz-box-shadow: 0px 0px 48px -2px rgba(0,0,0,0.1);
+            box-shadow: 0px 0px 48px -2px rgba(0,0,0,0.1);
+            transition: .3s all;
+            cursor: pointer;
+            margin-bottom: 80px;
+        }
+        .shadow-video {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.3);
+            border-radius: 20px;
+            transition: .3s all;
+            overflow: hidden;
+        }
+        .box-video:hover .shadow-video {
+            background-color: transparent;
+        }
+        .box-video p {
+            position: relative;
+            font-size: 21px;
+            font-weight: 600;
+            padding: 10px 0px;
+            padding-left: 5px;
+            margin: 0px;
+        }
+
+        /*modal*/
+        .modal-body {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .modal-body input {
+            position: relative;
+            width: 100%;
+            height: 55px;
+            border-radius: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            outline: none;
+            -webkit-box-shadow: 0px 0px 28px -12px rgba(0,0,0,.10);
+            -moz-box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.10);
+            box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.10);
+            border: 1px solid #ccc;
+            transition: .1s all;
+        }
+        .modal-body input:focus, .modal-body input:hover {
+            -webkit-box-shadow: 0px 0px 28px -12px rgba(0,0,0,.25);
+            -moz-box-shadow: 0px 0px 28px -12px rgba(0,0,0,.25);
+            box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.25);
+            border-bottom: 3px solid #ff8c00;
+        }
+        .modal-body label {
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .modal-footer input {
+            margin-top: 10px;
+            position: relative;
+            width: 200px;
+            height: 55px;
+            border-radius: 4px;
+            -webkit-box-shadow: 0px 0px 28px -12px rgba(0,0,0,.15);
+            -moz-box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.15);
+            box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.15);
+            background-color: #ff8c00;
+            color: white;
+            outline: none;
+            border: none;
+            font-size: 18px;
+        }
+       .modal-backdrop.show {
+            opacity: .9;
+        }
+
+        /*erro*/
+        .erro {
+            color: red;
+            font-weight: 500;
+            margin: 5px 5px;
+            display: none;
+        }
+        .erro-input {
+            border: 1px solid red !important;
+        }
+    </style>
+
+    <script>
+        // função validacao do email
+        var email = $('.modal-body input');
+        function validacaoFormulario() {
+            var res = false;
+            if(email.val().indexOf('@')==-1 || email.val().indexOf('.')==-1 ){
+                $(email).addClass('erro-input');
+                $('.erro-email').show();
+            } else {
+                $(email).removeClass('erro-input');
+                $('.erro-email').hide();
+                res = true;
+            }
+            return res;
+        };
+
+        // funçao clique
+        $('.modal-footer input').click(function(){
+            if(validacaoFormulario()) {
+                $('#modalCadastroVideo').modal('hide');
+            }else{
+
+            }
+        });
+
+        // modal aparecer
+        setTimeout(function(){
+            $('#modalCadastroVideo').modal('show');
+        }, 500);
+    </script>
+
+</body>
+</html>
